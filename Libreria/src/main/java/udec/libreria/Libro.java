@@ -6,7 +6,7 @@
 package udec.libreria;
 
 /**
- *
+ *clase que contiene los atributos de los libros
  * @author Jonathan
  */
 public class Libro {

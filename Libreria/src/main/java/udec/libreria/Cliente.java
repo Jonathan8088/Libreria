@@ -6,7 +6,7 @@
 package udec.libreria;
 
 /**
- *Clase que especifica los atributos de los cientes para manejo interno de la libreria
+ *Clase que especifica los atributos de los cientes 
  * @author Jonathan
  * @version 1.0
  */
