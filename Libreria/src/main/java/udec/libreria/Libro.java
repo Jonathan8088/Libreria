@@ -12,11 +12,11 @@ package udec.libreria;
 public class Libro {
     
     /**
-     * atrinuto que contiene el titulo del libro
+     * atributo que contiene el titulo del libro
      */
     private String titulo;
     /**
-     * atrinuto que contiene el autor del libro
+     * atributo que contiene el autor del libro
      */
     private String autor;
     /**
@@ -47,6 +47,18 @@ public class Libro {
         this.editorial = editorial;
         this.precio = precio;
     }//constructor
+    /**
+     * metodo en el cual se podran ingresar libros al sistema
+     */
+    public void igresarLibro(){
+        
+    }//ingresarLibro
+    /**
+     * metodo en el cual se podra realizar la compra de libros
+     */
+    public void comprarLibro(){
+        
+    }//comprarLibro
     
     /**
      * retorna el titulo
