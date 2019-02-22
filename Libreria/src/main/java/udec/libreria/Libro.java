@@ -10,7 +10,10 @@ package udec.libreria;
  * @author Jonathan
  */
 public class Libro {
-    
+    /**
+     * atributo que contiene el identificador interno del libro
+     */
+    private int identificacion;
     /**
      * atributo que contiene el titulo del libro
      */
@@ -31,35 +34,37 @@ public class Libro {
      * atributo que contiene el precio del libro
      */
     private float precio;
-
     /**
      * constructor que inicializa las variables
+     * @param identificacion
      * @param titulo
      * @param autor
      * @param version
      * @param editorial
      * @param precio 
      */
-    public Libro(String titulo, String autor, byte version, String editorial, float precio) {
+    public Libro(int identificacion,String titulo, String autor, byte version, String editorial, float precio) {
+        this.identificacion = identificacion;
         this.titulo = titulo;
         this.autor = autor;
         this.version = version;
         this.editorial = editorial;
         this.precio = precio;
-    }//constructor
+    }//constructor   
     /**
-     * metodo en el cual se podran ingresar libros al sistema
+     * retorna la identificacion del libro
+     * @return identificacion
      */
-    public void igresarLibro(){
-        
-    }//ingresarLibro
+    public int getIdentificacion() {
+        return identificacion;
+    }//getIdentificacion
     /**
-     * metodo en el cual se podra realizar la compra de libros
+     * modifica la identificacion del libro
+     * @param identificacion 
      */
-    public void comprarLibro(){
-        
-    }//comprarLibro
-    
+    public void setIdentificacion(int identificacion) {
+        this.identificacion = identificacion;
+    }//setIdentificacion
     /**
      * retorna el titulo
      * @return titulo

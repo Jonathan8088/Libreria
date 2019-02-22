@@ -6,44 +6,58 @@
 package udec.libreria;
 
 /**
- *clase en la cual se maneja todo el sistema de inventario de libros y metodos relacionados
- * con el mismo
+ *clase por la cual se administra el inventario de los libros
  * @author Jonathan
  */
 public class Inventario {
- 
     /**
-     * constructor de la clase
+     * array en el cual se recorren los libros para sus operaciones
      */
-    public Inventario() {
-    }//constructor
-   
+    private String libros[];
     /**
-     * metodo que permite observar el inventario actual de la libreria
+     * constructor que inicializa las variables
+     * @param libros 
      */
-    private void verInventario(){
-        
-    }//Inventarios
+    public Inventario(String[] libros) {
+        this.libros = libros;
+    }//construrctor
+    
     /**
      * metodo que se llama tras cada accion en la libreria para verificar la cantidad 
      * existente de algun libro en particular, al detectar una existencia menor a 
      * 10 libros generara una alerta para dar aviso de esto
      */
-    private void alerta(){
+    private void alerta(int cantidad){
         
     }//Alerta
     /**
-     * metodo que permitira observar cual es el libro mas vendido y cual el menos vendido
+     * metodo que retorna el nombre de cual es el libro mas vendido y cual el menos vendido
      */
-    private void top(){
-        
+    private String top(){
+        String masVendido, menosVendido;
+        return null;
     }//Top
     /**
-     * metodos que permitira observar cual es el libro de mayor precio y cual es el
+     * metodos que retorna el nombre de  cual es el libro de mayor precio y cual es el
      * de menor precio
      */
-    private void precio(){
-        
+    private String precio(){
+        String mayorPrecio,menosPrecio;
+        return null;
     }//Precio
+    /**
+     * retorna el array de libros
+     * @return libros
+     */
+    public String[] getLibros() {
+        return libros;
+    }//getLibros
+    /**
+     * modifica el array de libros
+     * @param libros 
+     */
+    public void setLibros(String[] libros) {
+        this.libros = libros;
+    }//setLibros
     
 }//Inventario
